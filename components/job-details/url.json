@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_job_details_urls",
+  "info": {
+    "name": "url",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "path": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_job_details_date_times",
+  "info": {
+    "name": "DateTime",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "datetime": {
+      "type": "datetime"
+    }
+  }
+}

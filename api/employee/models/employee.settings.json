@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "name": "Employee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "phone": {
+      "type": "biginteger"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "languages": {
+      "collection": "language",
+      "via": "employee"
+    },
+    "educations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.education"
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "dealSalary": {
+      "type": "biginteger"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isVerified": {
+      "type": "boolean"
+    },
+    "skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.skill"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.location"
+    },
+    "tagNames": {
+      "type": "json"
+    },
+    "applications": {
+      "via": "employee",
+      "collection": "application"
+    }
+  }
+}

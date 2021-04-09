@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_common_educations",
+  "info": {
+    "name": "Education",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "schoolName": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "enumeration",
+      "enum": [
+        "BACHELOR",
+        "MASTER",
+        "PHD",
+        "CERTIFICATE",
+        "GED",
+        "HIGHSCHOOL"
+      ]
+    }
+  }
+}

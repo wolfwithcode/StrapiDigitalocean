@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "state": {
+      "type": "string",
+      "default": "unknown"
+    },
+    "city": {
+      "type": "string",
+      "default": "unknown"
+    },
+    "address": {
+      "type": "string",
+      "default": "unknown"
+    },
+    "zipcode": {
+      "type": "biginteger",
+      "default": "0000"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "subsciptionCategory": {
+      "model": "subsciption-category"
+    },
+    "salaryCategory": {
+      "model": "salary-category"
+    },
+    "otherImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job-details.url"
+    },
+    "bumpHistory": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job-details.date-time"
+    },
+    "frozenHistory": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job-details.date-time"
+    },
+    "reopenHistory": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job-details.date-time"
+    },
+    "showPhone": {
+      "type": "boolean"
+    },
+    "callFrom": {
+      "type": "time"
+    },
+    "callTo": {
+      "type": "time"
+    },
+    "jobCategory": {
+      "model": "job-category"
+    },
+    "isCrawled": {
+      "type": "boolean",
+      "default": false
+    },
+    "applications": {
+      "collection": "application",
+      "via": "job"
+    },
+    "employer": {
+      "model": "employer",
+      "via": "jobs"
+    },
+    "salary": {
+      "type": "biginteger"
+    },
+    "template": {
+      "model": "template"
+    }
+  }
+}

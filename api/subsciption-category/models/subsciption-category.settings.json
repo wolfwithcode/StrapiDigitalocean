@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subsciption_categories",
+  "info": {
+    "name": "SubscriptionCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desciption": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "FREE",
+        "PAID"
+      ]
+    }
+  }
+}
