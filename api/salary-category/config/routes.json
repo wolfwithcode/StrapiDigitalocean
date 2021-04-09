@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/salary-categories",
+      "handler": "salary-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-categories/count",
+      "handler": "salary-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/salary-categories/:id",
+      "handler": "salary-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/salary-categories",
+      "handler": "salary-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/salary-categories/:id",
+      "handler": "salary-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/salary-categories/:id",
+      "handler": "salary-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

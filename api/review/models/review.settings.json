@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Review",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comment": {
+      "type": "richtext"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "isVerified": {
+      "type": "boolean"
+    },
+    "employer": {
+      "via": "reviews",
+      "model": "employer"
+    }
+  }
+}

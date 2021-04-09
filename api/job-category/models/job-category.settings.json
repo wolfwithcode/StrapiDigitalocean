@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_categories",
+  "info": {
+    "name": "JobCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desciption": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "PART_TIME",
+        "FULL_TIME",
+        "DEAL"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_locations",
+  "info": {
+    "name": "Location",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zipCode": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

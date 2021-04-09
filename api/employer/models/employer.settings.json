@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employers",
+  "info": {
+    "name": "employer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shopName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.location"
+    },
+    "ENI": {
+      "type": "biginteger"
+    },
+    "trustedShop": {
+      "type": "boolean",
+      "default": false
+    },
+    "reviews": {
+      "collection": "review",
+      "via": "employer"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "employerCategory": {
+      "model": "employer-category",
+      "via": "employers"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "isVerifiedPhone": {
+      "type": "boolean",
+      "default": false
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "jobs": {
+      "via": "employer",
+      "collection": "job"
+    }
+  }
+}

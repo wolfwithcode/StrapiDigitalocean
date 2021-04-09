@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employer_categories",
+  "info": {
+    "name": "EmployerCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "PERSONAL",
+        "SHOP",
+        "CORPORATION"
+      ],
+      "unique": true,
+      "default": "PERSONAL"
+    },
+    "employers": {
+      "via": "employerCategory",
+      "collection": "employer"
+    }
+  }
+}
