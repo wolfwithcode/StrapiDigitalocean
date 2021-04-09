@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "name": "Language"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "VIETNAMESE",
+        "CHINESE",
+        "SPANISH"
+      ],
+      "unique": true,
+      "default": "VIETNAMESE"
+    },
+    "employee": {
+      "via": "languages",
+      "model": "employee"
+    }
+  }
+}

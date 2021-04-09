@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_status_categories",
+  "info": {
+    "name": "JobStatusCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "PENDING",
+        "OPEN",
+        "CLOSED"
+      ]
+    }
+  }
+}

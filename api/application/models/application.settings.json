@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "name": "Application"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "job": {
+      "via": "applications",
+      "model": "job"
+    },
+    "employee": {
+      "model": "employee",
+      "via": "applications"
+    }
+  }
+}

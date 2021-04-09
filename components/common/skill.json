@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_skills",
+  "info": {
+    "name": "Skill",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "BEGINNER",
+        "INTERMIDIATE",
+        "ADVANCED"
+      ]
+    }
+  }
+}
